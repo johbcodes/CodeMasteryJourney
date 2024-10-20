@@ -1,4 +1,4 @@
-function lengthOfLongestSubstring(s: string): number {
+function lengthOfLongestSubstringTS(s: string): number {
   const map: Map<string, number> = new Map();
   let maxLength: number = 0;
   let left: number = 0;
@@ -19,7 +19,7 @@ function lengthOfLongestSubstring(s: string): number {
 }
 
 // Caller function to test with different inputs
-function runTests() {
+function runTestsTS() {
   const tests = [
     { input: "abcabcbb", expected: 3 },
     { input: "bbbbb", expected: 1 },
@@ -27,7 +27,7 @@ function runTests() {
   ];
 
   tests.forEach((test, index) => {
-    const result = lengthOfLongestSubstring(test.input);
+    const result = lengthOfLongestSubstringTS(test.input);
     console.log(`Test ${index + 1}:`);
     console.log(`Input: ${test.input}`);
     console.log(`Output: ${result}`);
@@ -38,4 +38,4 @@ function runTests() {
 }
 
 // Run all tests
-runTests();
+runTestsTS();

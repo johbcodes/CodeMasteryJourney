@@ -2,6 +2,7 @@
  * @param {string} s
  * @return {number}
  */
+
 var lengthOfLongestSubstring = function (s) {
   let set = new Set();
   let right = 0;
@@ -20,6 +21,7 @@ var lengthOfLongestSubstring = function (s) {
   }
   return max;
 };
+
 function runTests() {
   const tests = [
     { input: "abcabcbb", expected: 3 },
